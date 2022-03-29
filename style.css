@@ -1,0 +1,200 @@
+*{
+    box-sizing: border-box;
+    font-family: "readex pro", arial, sans-serif;
+    padding:0%;
+    margin: 0%;
+}
+
+html{
+    overflow-x: hidden;
+    max-width: 600px;
+}
+
+/*CABEÇALHO MENU*/
+
+.conteudo{
+    align-items: center;
+    background-color: black;
+    color: white;
+    display: flex;
+    height: 70px;
+    justify-content: space-around;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.logo{
+    cursor: pointer;
+    padding: 20px;
+    width: 160px;
+}
+
+
+.botaocabecalho{
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    color: black;
+    cursor: pointer;
+    display: flex;
+    font-size: 16px;
+    height: 30px;
+    justify-content: center;
+    width: 150px;
+
+}
+
+
+.link{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.conteudo ul{
+    display: flex;
+    list-style: none;
+    
+}
+
+ul li{
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+    cursor: pointer;
+    
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    color: rgb(131, 131, 131);
+    transition-delay: 0.1s;
+}
+
+@media(max-width: 600px){
+    .conteudo{
+    justify-content: space-evenly;
+    }
+    li{
+        display: none;
+    }
+    
+}
+
+/*SECTION after HEADER*/
+
+
+ #section1{
+    background-image: url("./assets/pexels-keira-burton-6146929.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 780px;
+    width: 100vw;
+     
+}
+
+.textoimg{ 
+    color: white;
+    height: 800px;
+    left: 15%;
+    position: absolute;
+    top: 20%;
+    text-shadow: 1px 1px 2px black;
+    width: 500px;
+}
+
+.titulo{
+    font-size: 35px;
+    
+}
+
+.subtitulo{
+    padding-bottom: 40px;
+    padding-top: 10px;
+
+}
+
+select{
+    background: none;
+    border: solid 1px white;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    text-shadow: 1px 1px 2px black;
+    width: 350px;
+
+}
+
+option{
+    background-color: white;
+    color: black;
+}
+
+.valor{
+    font-size: 20px;
+    padding-top: 40px;
+}
+
+.botaoimagem{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 250px;
+    height: 50px;
+    border: solid 2px rgb(255, 99, 37);
+    border-radius: 25px;
+    font-size: 18px;
+}
+
+.botaoimagem:hover{
+    color: white;
+    background: rgb(255, 99, 37);
+}
+
+.detalheprom{
+    color: white;
+    font-size: 15px;
+    text-shadow: 2px 1px 2px black;
+
+}
+
+.direitosreservados{
+    font-size: 17px;
+    text-shadow: 2px 1px 2px black;
+
+
+}
+@media(max-width: 600px){
+
+
+.textoimg{
+    width: 450px;
+    position: absolute;
+    top: 20%;
+}
+
+@media(max-width: 550px){
+
+
+    .textoimg{
+        width: 410px;
+        position: absolute;
+        top: 20%; 
+    }
+
+@media(max-width: 500px){
+    #section1{
+        background-image:none;
+        background: black;
+    }
+
+.textoimg{
+    width: 400px;   
+    position: absolute;
+    top: 20%;
+}
+
+}}}

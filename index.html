@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout McAfee</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Gwendolyn&family=Readex+Pro:wght@200;300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="conteudo">
+                <a href="./index.html"><img class="logo" src="assets/logomcafee.png">
+
+                <button class="botaocabecalho"><a class="link" href="#">
+                    Compre Aqui</a>
+                </button>
+
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Sobre nós</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            
+        </div>
+
+    </header>
+
+    <section id="section1">
+            <div class="textoimg">
+                 <h1 class="titulo">
+                    McAfee<span>&#174;</span> Total Protection    
+                 </h1>
+                
+                <h2 class="subtitulo">
+                    Inclui: dois anos de antivírus premium, navegação segura na web e otimização de PC.**
+                </h2>
+
+                <div class="escolhaumassin">
+                <p>
+                    Escolha uma assinatura:
+                </p>
+                
+                <select name="escolherplano" onchange="planos()" id="plano">
+                    <option value="val1" id="val1">10 dispositivos - 2 anos (melhor oferta)*</option>
+                    <option value="val2" id="val2">5 dispositivos - 2 anos</option>
+                    <option value="val3" id="val3">1 dispositivo - 2 anos </option>
+                    <option value="val4" id="val4">1 dispositivo - 1 ano</option>
+                </select>
+
+                <div class="valor">
+                <h1 id="valortotal">
+                    R$144,50*
+                </h1>
+                <p id="pmes">Pague hoje R$289,00 por dois anos de assinatura!</p>
+                <button class="botaoimagem">Compre Agora</button>
+                <a href="#" class="detalheprom"><p>*Veja os detalhes promocionais da oferta abaixo.</p></a>
+                <p class="direitosreservados">
+                    Windows<span>&#174;</span> | macOS<span>&#174;</span> | Android<span>&#8482;</span> | iOS<span>&#174;</span>
+                </p>
+            </div>
+            </div>
+        
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
